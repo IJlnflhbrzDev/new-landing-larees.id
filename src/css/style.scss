@@ -24,7 +24,6 @@ h2 {
 	font-size: 1.25rem;
 	line-height: 1.25;
 	margin-bottom: 2.5rem;
-	text-align: center;
 	color: rgba(229, 231, 235, 1);
 }
 section {
@@ -300,6 +299,38 @@ section {
 	img {
 		width: 80%;
 		margin: 0 auto;
+	}
+}
+
+.overview-content {
+	background-color: #f6cc65;
+	padding: 50px;
+	border-radius: 10px;
+	h2 {
+		margin-bottom: 3.5rem;
+		color: black;
+		opacity: 1;
+		font-size: 1.875rem;
+		font-weight: 500;
+	}
+}
+
+.box-icons {
+	img {
+		display: block;
+		width: 48px;
+		height: 48px;
+	}
+	p {
+		color: black;
+		font-size: 1.125rem;
+		margin: 1rem 0px;
+	}
+	a.btn {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 @media (min-width: 992px) {
