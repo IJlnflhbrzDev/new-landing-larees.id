@@ -21,18 +21,18 @@ body {
 }
 
 h2 {
-	font-size: 1.25rem;
+	font-size: 2.05rem;
 	line-height: 1.25;
 	margin-bottom: 2.5rem;
 	color: rgba(229, 231, 235, 1);
-}
-section {
-	margin-bottom: 150px;
 }
 
 .navbar {
 	background-color: var(--content-bg-color);
 	a.navbar-brand {
+		svg {
+			width: 8rem;
+		}
 		color: var(--default-text-color) !important;
 	}
 	a.nav-link {
@@ -42,6 +42,10 @@ section {
 }
 
 // slide
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	display: none !important;
+}
 .slide-wrapper {
 	height: 70vh;
 
@@ -70,11 +74,6 @@ section {
 
 	.carousel {
 		height: 450px;
-	}
-
-	.carousel-control-next-icon,
-	.carousel-control-prev-icon {
-		display: none !important;
 	}
 
 	.carousel-indicators li {
@@ -342,7 +341,7 @@ footer .col-md-6 {
 footer .col-xl-3 .footer_description,
 footer .col-md-6 .footer_description {
 	font-size: 14px !important;
-	color: grey !important;
+	color: var(--nav-link-color) !important;
 }
 footer .col-xl-3 h5,
 footer .col-md-6 h5 {
@@ -360,6 +359,9 @@ footer .col-md-6 p {
 footer .col-xl-3 .list_footer,
 footer .col-md-6 .list_footer {
 	padding: 5px;
+}
+.list_footer a {
+	font-size: 1rem;
 }
 
 footer .col-xl-3 li,
@@ -381,8 +383,13 @@ footer .col-md-6 li i {
 
 footer .col-xl-3 li a,
 footer .col-md-6 li a {
+	margin: 3px 0px;
 	text-decoration: none;
-	color: var(--description-text-color);
+	color: var(--nav-link-color);
+
+	&:hover {
+		color: white;
+	}
 }
 
 footer .col-xl-3 .social_media_description,

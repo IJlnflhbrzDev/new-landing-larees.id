@@ -25,14 +25,10 @@ body {
 }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: 2.05rem;
   line-height: 1.25;
   margin-bottom: 2.5rem;
   color: #e5e7eb;
-}
-
-section {
-  margin-bottom: 150px;
 }
 
 .navbar {
@@ -43,9 +39,18 @@ section {
   color: var(--default-text-color) !important;
 }
 
+.navbar a.navbar-brand svg {
+  width: 8rem;
+}
+
 .navbar a.nav-link {
   font-size: 1rem;
   color: var(--nav-link-color) !important;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: none !important;
 }
 
 .slide-wrapper {
@@ -79,11 +84,6 @@ section {
 
 .slide-wrapper .carousel {
   height: 450px;
-}
-
-.slide-wrapper .carousel-control-next-icon,
-.slide-wrapper .carousel-control-prev-icon {
-  display: none !important;
 }
 
 .slide-wrapper .carousel-indicators li {
@@ -359,7 +359,7 @@ footer .col-md-6 {
 footer .col-xl-3 .footer_description,
 footer .col-md-6 .footer_description {
   font-size: 14px !important;
-  color: grey !important;
+  color: var(--nav-link-color) !important;
 }
 
 footer .col-xl-3 h5,
@@ -378,6 +378,10 @@ footer .col-md-6 p {
 footer .col-xl-3 .list_footer,
 footer .col-md-6 .list_footer {
   padding: 5px;
+}
+
+.list_footer a {
+  font-size: 1rem;
 }
 
 footer .col-xl-3 li,
@@ -399,8 +403,14 @@ footer .col-md-6 li i {
 
 footer .col-xl-3 li a,
 footer .col-md-6 li a {
+  margin: 3px 0px;
   text-decoration: none;
-  color: var(--description-text-color);
+  color: var(--nav-link-color);
+}
+
+footer .col-xl-3 li a:hover,
+footer .col-md-6 li a:hover {
+  color: white;
 }
 
 footer .col-xl-3 .social_media_description,
