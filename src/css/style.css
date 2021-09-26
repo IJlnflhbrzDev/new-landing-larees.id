@@ -24,6 +24,29 @@ body {
   transition: all .5s ease;
 }
 
+.card {
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.seller-story .card {
+  position: relative;
+}
+
+.seller-story .card img {
+  border-radius: 10px;
+}
+
+.seller-story .card-body {
+  position: relative;
+  top: -50px;
+  z-index: 1;
+  background-color: var(--nav-bg-color);
+  border-radius: 10px;
+  width: 95%;
+  margin: 0 auto;
+}
+
 h2 {
   font-size: 2.05rem;
   line-height: 1.25;
@@ -56,6 +79,37 @@ h2 {
 
 .navbar {
   background-color: var(--content-bg-color);
+}
+
+.navbar .dropbtn {
+  font-size: 16px;
+  border: none;
+}
+
+.navbar .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar .dropdown a {
+  cursor: pointer;
+}
+
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: left;
+  background-color: var(--nav-bg-color);
+  width: 100%;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .navbar a.navbar-brand {
