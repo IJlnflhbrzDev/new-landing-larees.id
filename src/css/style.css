@@ -31,6 +31,29 @@ h2 {
   color: #e5e7eb;
 }
 
+.notif-bar {
+  background-color: #374151;
+  padding: 10px;
+}
+
+.notif-bar span:nth-child(2) {
+  font-size: .875rem;
+  color: var(--default-text-color);
+  opacity: .9;
+}
+
+.notif-bar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .navbar {
   background-color: var(--content-bg-color);
 }
@@ -46,6 +69,10 @@ h2 {
 .navbar a.nav-link {
   font-size: 1rem;
   color: var(--nav-link-color) !important;
+}
+
+.navbar a.nav-link:hover {
+  color: white !important;
 }
 
 .carousel-control-next-icon,

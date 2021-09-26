@@ -26,6 +26,20 @@ h2 {
 	margin-bottom: 2.5rem;
 	color: rgba(229, 231, 235, 1);
 }
+.notif-bar {
+	background-color: #374151;
+	padding: 10px;
+	span:nth-child(2) {
+		font-size: .875rem;
+		color: var(--default-text-color);
+		opacity: .9;
+	}
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
 
 .navbar {
 	background-color: var(--content-bg-color);
@@ -38,6 +52,9 @@ h2 {
 	a.nav-link {
 		font-size: 1rem;
 		color: var(--nav-link-color) !important;
+		&:hover {
+			color: white !important;
+		}
 	}
 }
 
