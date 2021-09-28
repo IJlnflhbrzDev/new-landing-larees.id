@@ -29,6 +29,41 @@ body {
   background-color: transparent;
 }
 
+.seller-story .card-link {
+  text-decoration: none;
+  color: white;
+}
+
+.seller-story .card-link .card {
+  -webkit-transition: 0.55s ease-in;
+  transition: 0.55s ease-in;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.seller-story .card-link:hover .card {
+  margin-top: -20px !important;
+  -webkit-transition: all 0.55s ease;
+  transition: all 0.55s ease;
+}
+
+.seller-story .sub-title {
+  font-size: .875rem;
+  letter-spacing: .1em;
+  margin-bottom: 1rem;
+  display: block;
+  color: rgba(229, 231, 235, 0.9);
+  font-weight: 500;
+  text-align: center;
+}
+
+.seller-story h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  opacity: .9;
+}
+
 .seller-story .card {
   position: relative;
 }
@@ -40,6 +75,7 @@ body {
 .seller-story .card-body {
   position: relative;
   top: -50px;
+  padding: 20px 20px 10px 20px;
   z-index: 1;
   background-color: var(--nav-bg-color);
   border-radius: 10px;
