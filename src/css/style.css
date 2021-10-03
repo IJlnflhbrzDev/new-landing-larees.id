@@ -88,6 +88,7 @@ h2 {
   line-height: 1.25;
   margin-bottom: 2.5rem;
   color: #e5e7eb;
+  font-weight: 600;
 }
 
 .notif-bar {
@@ -466,6 +467,119 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.card-pricisig .row .col-lg-4,
+.card-pricisig .row .col-md-6,
+.card-pricisig .row .col-sm-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.card-pricisig .platinum {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1e40af), to(#15c));
+  background: linear-gradient(#1e40af, #15c);
+}
+
+.card-pricisig .card {
+  position: relative;
+  background-color: var(--nav-bg-color);
+  opacity: .9;
+  height: 100%;
+}
+
+.card-pricisig .card .card-body {
+  padding: 2rem;
+}
+
+.card-pricisig .card .btn {
+  background-color: white;
+  border-color: white;
+  color: var(--content-bg-color);
+  opacity: .9;
+  margin-top: 8px;
+}
+
+.card-pricisig .card .btn:hover {
+  background-color: var(--nav-bg-color);
+  color: white;
+}
+
+.card-pricisig .card .show-detail {
+  background-color: transparent;
+  border-bottom-width: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px dashed white;
+  border-radius: 0;
+  padding: 0;
+  color: white;
+  opacity: .6;
+  margin-top: -20px;
+  margin-left: 10px;
+}
+
+.card-pricisig .card .parent-price-card {
+  position: relative;
+}
+
+.card-pricisig .card .parent-price-card .rupiah-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-pricisig .card .parent-price-card .zero-card {
+  font-weight: 500;
+  font-size: 2.25rem;
+  margin-left: 1.30rem;
+}
+
+.card-pricisig .card .parent-price-card .bulan-card {
+  position: relative;
+  left: -9px;
+}
+
+.card-pricisig .card ul {
+  padding: 1.25rem;
+}
+
+.card-pricisig .card ul li {
+  line-height: 1.25;
+  margin-bottom: .75rem;
+}
+
+.card-pricisig p {
+  font-size: .875rem;
+  margin-bottom: 1.25rem;
+}
+
+.card-pricisig .nav-link {
+  padding: .3rem 2.5rem;
+  border-radius: 40px;
+}
+
+.card-pricisig .nav-pills {
+  border: 1px solid white;
+  border-radius: 40px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  padding: 2px;
+  overflow: hidden;
+}
+
+.card-pricisig .tab-content {
+  margin: 100px 0px;
 }
 
 footer .col-xl-3,
