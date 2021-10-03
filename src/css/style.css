@@ -521,6 +521,8 @@ h2 {
   border-bottom: 1px dashed white;
   border-radius: 0;
   padding: 0;
+  position: absolute;
+  bottom: 22px;
   color: white;
   opacity: .6;
   margin-top: -20px;
