@@ -293,6 +293,41 @@ h2 {
   color: var(--description-text-color);
 }
 
+section.addons .row .col-lg-4,
+section.addons .row .col-md-6,
+section.addons .row .col-lg-8,
+section.addons .row .col-sm-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+section.addons .card {
+  background-color: var(--nav-bg-color) !important;
+  padding: .98rem;
+  border-radius: 10px !important;
+}
+
+section.addons h5 {
+  color: var(--default-text-color) !important;
+  font-weight: 600;
+}
+
+section.addons p {
+  color: var(--default-text-color) !important;
+  opacity: .6;
+}
+
 .icons-card-wrapper .card {
   background-color: var(--content-bg-color);
 }

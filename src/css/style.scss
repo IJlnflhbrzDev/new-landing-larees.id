@@ -269,6 +269,32 @@ h2 {
 	}
 }
 
+section.addons {
+	.row {
+		.col-lg-4,
+		.col-md-6,
+		.col-lg-8,
+		.col-sm-12 {
+			display: flex;
+			justify-content: stretch;
+			align-items: stretch;
+			flex-direction: column-reverse;
+		}
+	}
+	.card {
+		background-color: var(--nav-bg-color) !important;
+		padding: .98rem;
+		border-radius: 10px !important;
+	}
+	h5 {
+		color: var(--default-text-color) !important;
+		font-weight: 600;
+	}
+	p {
+		color: var(--default-text-color) !important;
+		opacity: .6;
+	}
+}
 .icons-card-wrapper {
 	.card {
 		background-color: var(--content-bg-color);
