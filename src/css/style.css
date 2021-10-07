@@ -549,6 +549,28 @@ section.addons .price-card-addons .btn-white:hover {
           align-items: center;
 }
 
+.card-pricisig .rekomendasi-platinum {
+  background-color: #f87171;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1px 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+  top: -15px;
+  text-align: center;
+}
+
+.card-pricisig .rekomendasi-platinum .dot-platinum {
+  width: 8px;
+  height: 8px;
+  position: inherit;
+  top: 31%;
+  background: #1e3fa4;
+  border-radius: 50%;
+}
+
 .card-pricisig .row .col-lg-4,
 .card-pricisig .row .col-md-6,
 .card-pricisig .row .col-sm-12 {

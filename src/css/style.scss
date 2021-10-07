@@ -502,6 +502,26 @@ section.addons {
 
 // card-pricisig
 .card-pricisig {
+	.rekomendasi-platinum {
+		background-color: #f87171;
+		width: max-content;
+		padding: 1px 10px;
+		border-radius: 20px;
+		overflow: hidden;
+		position: absolute;
+		top: -15px;
+		text-align: center;
+
+		.dot-platinum {
+			width: 8px;
+			height: 8px;
+			position: inherit;
+			top: 31%;
+			background: #1e3fa4;
+			border-radius: 50%;
+		}
+	}
+
 	.row {
 		.col-lg-4,
 		.col-md-6,
