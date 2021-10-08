@@ -1,1 +1,5 @@
-const channel_list_tab = document.querySelector(".form-row  .form-check-label");
+const drop_btn = document.querySelector(".dropdown");
+
+drop_btn.addEventListener('mouseover', function () {
+     document.querySelector(".dropdown-content").classList.toggle('show');
+});
