@@ -790,6 +790,78 @@ footer .card-header {
   align-items: center;
 }
 
+.register {
+  width: 555px;
+  margin: 0 auto;
+}
+
+.register form {
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.register .form-group {
+  position: relative;
+}
+
+.register .form-group svg {
+  margin-top: 1px;
+  color: #ced4da;
+  position: absolute;
+  top: 20px;
+  left: .5rem;
+  -webkit-transform: translateY(-50%) scale(0.85);
+          transform: translateY(-50%) scale(0.85);
+}
+
+.register .form-group .btn {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.register .form-group .btn:hover {
+  -webkit-box-shadow: 0 5px 15px black, 0 4px 10px #007b0a;
+          box-shadow: 0 5px 15px black, 0 4px 10px #007b0a;
+}
+
+.register .channel-list .form-check-label {
+  padding: .25rem 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #e5e5e5;
+  border-radius: .25rem;
+  cursor: pointer;
+  font-size: 12px;
+  margin-right: 4px;
+  margin-bottom: 8px;
+}
+
+.register .form-check-inline {
+  margin-right: 0;
+}
+
+.register .form-check-inline .form-check-input {
+  position: static;
+  margin-top: 0;
+  margin-right: .3125rem;
+  margin-left: 0;
+}
+
+.register [name="channel[]"] {
+  display: none;
+}
+
+.register input[type=checkbox],
+.register input[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
 @media (min-width: 992px) {
   .slide-wrapper {
     height: auto !important;
