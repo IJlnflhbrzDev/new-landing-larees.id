@@ -301,6 +301,12 @@ h2 {
 }
 
 section.addons {
+	.btn-addons-container {
+		display: flex;
+		justify-content: stretch;
+		align-items: start;
+		flex-direction: column-reverse;
+	}
 	.row {
 		.col-lg-4,
 		.col-md-6,
@@ -388,10 +394,21 @@ section.addons {
 			margin-bottom: 20px;
 		}
 		p {
-			margin-bottom: 40px;
+			margin-bottom: 20px;
 			color: var(--description-text-color);
 		}
-		.btn {
+		.btn-white {
+			background-color: white;
+			background-color: white;
+			padding: 1px 20px;
+			margin-bottom: 10px;
+
+			&:hover {
+				background-color: var(--nav-bg-color);
+				color: white;
+			}
+		}
+		.btn.btn-custom-underline {
 			background-color: transparent;
 			color: var(--description-text-color);
 			border: none;
@@ -650,6 +667,44 @@ section.addons {
 		margin: 100px 0px;
 	}
 }
+
+.boxicons-card {
+	margin-top: 90px;
+	.card {
+		padding: 20px 20px;
+		border: none;
+		.card-body {
+			padding: 1rem 0px;
+		}
+
+		img {
+			width: 3.25rem;
+			height: 3.25rem;
+		}
+		h5 {
+			font-size: 1.5rem;
+			line-height: 1.25;
+			opacity: .9;
+			font-weight: 600;
+			margin-bottom: 20px;
+		}
+		p {
+			color: rgb(156, 163, 175);
+		}
+	}
+
+	.counter-image {
+		background-color: rgb(250, 219, 138);
+		width: 2rem;
+		height: 2rem;
+		border-radius: 10px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+	}
+}
+
 footer .col-xl-3,
 footer .col-md-6 {
 	padding: 20px 0;
@@ -753,10 +808,13 @@ footer .card-header {
 .register {
 	width: 555px;
 	margin: 0 auto;
+	padding: 0px;
+	color: black;
 	form {
 		box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 		overflow: hidden;
 		border-radius: 10px;
+		padding: 25px;
 	}
 
 	.form-group {
@@ -781,7 +839,7 @@ footer .card-header {
 		padding: .25rem 1rem;
 		width: 100%;
 		display: flex;
-		border: 1px solid #e5e5e5;
+		border: 1px solid var(--nav-bg-color);
 		border-radius: .25rem;
 		cursor: pointer;
 		font-size: 12px;

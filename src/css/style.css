@@ -330,6 +330,22 @@ h2 {
   color: var(--description-text-color);
 }
 
+section.addons .btn-addons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
 section.addons .row .col-lg-4,
 section.addons .row .col-md-6,
 section.addons .row .col-lg-8,
@@ -433,18 +449,30 @@ section.addons .price-card-addons .btn-white:hover {
 }
 
 .icons-card-wrapper .card p {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: var(--description-text-color);
 }
 
-.icons-card-wrapper .card .btn {
+.icons-card-wrapper .card .btn-white {
+  background-color: white;
+  background-color: white;
+  padding: 1px 20px;
+  margin-bottom: 10px;
+}
+
+.icons-card-wrapper .card .btn-white:hover {
+  background-color: var(--nav-bg-color);
+  color: white;
+}
+
+.icons-card-wrapper .card .btn.btn-custom-underline {
   background-color: transparent;
   color: var(--description-text-color);
   border: none;
   text-decoration: underline;
 }
 
-.icons-card-wrapper .card .btn:hover {
+.icons-card-wrapper .card .btn.btn-custom-underline:hover {
   color: var(--default-text-color);
 }
 
@@ -723,6 +751,47 @@ section.addons .price-card-addons .btn-white:hover {
   margin: 100px 0px;
 }
 
+.boxicons-card {
+  margin-top: 90px;
+}
+
+.boxicons-card .card {
+  padding: 20px 20px;
+  border: none;
+}
+
+.boxicons-card .card .card-body {
+  padding: 1rem 0px;
+}
+
+.boxicons-card .card img {
+  width: 3.25rem;
+  height: 3.25rem;
+}
+
+.boxicons-card .card h5 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  opacity: .9;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.boxicons-card .card p {
+  color: #9ca3af;
+}
+
+.boxicons-card .counter-image {
+  background-color: #fadb8a;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
 footer .col-xl-3,
 footer .col-md-6 {
   padding: 20px 0;
@@ -830,6 +899,8 @@ footer .card-header {
 .register {
   width: 555px;
   margin: 0 auto;
+  padding: 0px;
+  color: black;
 }
 
 .register form {
@@ -837,6 +908,7 @@ footer .card-header {
           box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   overflow: hidden;
   border-radius: 10px;
+  padding: 25px;
 }
 
 .register .form-group {
@@ -869,7 +941,7 @@ footer .card-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--nav-bg-color);
   border-radius: .25rem;
   cursor: pointer;
   font-size: 12px;
